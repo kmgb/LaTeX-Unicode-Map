@@ -1,5 +1,6 @@
 from pathlib import Path
 from read_unicodedata import read_datafile, FontVariantType
+from read_unicode_tex import read_texfile
 from symbols import latex_symbols
 
 
@@ -42,9 +43,16 @@ def main():
             {k: x.text for k, v in font_variants.items() for x in v if x.kind == matches}
         )
 
+    tex_data = read_texfile()
+
+    # Now, we need to add the symbols that are not in the tex file
+    for key, value in latex_symbols.items():
+        if key not in tex_data:
+            tex_data[key] = value
+
     write_to_file(
         Path(output_path / "symbols.txt"),
-        latex_symbols
+        tex_data
     )
 
 
