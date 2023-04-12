@@ -14,8 +14,8 @@ Run generate.py, which will populate the output folder with the generated output
 
 
 ## Copyright
-The UnicodeData.txt file is © 1991-2015 Unicode, Inc. and is licensed under the [Unicode License](http://www.unicode.org/license.html).
-The unicode-math-table.tex file is © 2019 Will Robertson and is licensed under the LPPL v1.3c or later.
+* The UnicodeData.txt file is © 1991-2015 Unicode, Inc. and is licensed under the [Unicode License](http://www.unicode.org/license.html).  
+* The unicode-math-table.tex file is © 2019 Will Robertson and is licensed under the [LPPL v1.3c](https://www.latex-project.org/lppl.txt) or later.
 
 ---
 
