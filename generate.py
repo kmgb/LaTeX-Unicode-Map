@@ -1,5 +1,6 @@
 from pathlib import Path
 from read_unicodedata import read_datafile, FontVariantType
+from symbols import latex_symbols
 
 
 def main():
@@ -30,6 +31,7 @@ def main():
         "mathfrak": FontVariantType.FRAKTUR | FontVariantType.MATHEMATICAL,
         "mathit": FontVariantType.ITALIC | FontVariantType.MATHEMATICAL,
         "mathsf": FontVariantType.SANS_SERIF | FontVariantType.MATHEMATICAL,
+        "mathsfbfit": FontVariantType.SANS_SERIF | FontVariantType.BOLD | FontVariantType.ITALIC | FontVariantType.MATHEMATICAL,
         "mathsfit": FontVariantType.SANS_SERIF | FontVariantType.ITALIC | FontVariantType.MATHEMATICAL,
         "mathtt": FontVariantType.MONOSPACE | FontVariantType.MATHEMATICAL,
     }
@@ -39,6 +41,11 @@ def main():
             Path(output_path / f"{name}.txt"),
             {k: x.text for k, v in font_variants.items() for x in v if x.kind == matches}
         )
+
+    write_to_file(
+        Path(output_path / "symbols.txt"),
+        latex_symbols
+    )
 
 
 def write_to_file(path: Path, data: dict[str, str]):
