@@ -94,7 +94,8 @@ def read_datafile() -> ParsedUnicodeData:
     result.superscript_mapping["ι"] = "ᶥ"
     result.superscript_mapping["ϕ"] = "ᶲ"
 
-    # Planck's constant already fulfills this role, but isn't detected
+    # Planck's constant already fulfills this role, but isn't detected because it was added before
+    # the Unicode standard had a group of mathematical variants
     result.font_variants["h"].append(
         CharacterFontVariant(
             text="\u210E",

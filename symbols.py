@@ -229,8 +229,8 @@ latex_symbols: dict[str, str] = {
     "upoldkoppa": 'ϙ',
     "Stigma": 'Ϛ',
     "upstigma": 'ϛ',
-    "Digamma": 'Ϝ',
-    "digamma": 'ϝ',
+    # "Digamma": 'Ϝ', # Lower digamma isn't commonly used, so distinguishing it with a capital is unnecessary.
+    # "digamma": 'ϝ',
     "Koppa": 'Ϟ',
     "upkoppa": 'ϟ',
     "Sampi": 'Ϡ',
