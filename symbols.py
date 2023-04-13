@@ -52,6 +52,7 @@ latex_symbols: dict[str, str] = {
     # Greek letter variants
     "varepsilon":   "\u03B5",  # ε
     "vartheta":     "\u03D1",  # ϑ
+    "varkappa":     "\u03F0",  # ϰ, not usually included
     "varpi":        "\u03D6",  # ϖ
     "varrho":       "\u03F1",  # ϱ
     "varsigma":     "\u03C2",  # ς
@@ -59,12 +60,13 @@ latex_symbols: dict[str, str] = {
 
     # Personal additions
     "iff": "⟺",
-    "nmodels": "⊭",
-    "models": "⊨",
+    # "nmodels": "⊭",
+    # "models": "⊨",
     "coda": "𝄌",
     "segno": "𝄋",
 
     # Number set shorthands (mathbb) -- useful but non-standard
+    # Usually defined at top of a file like \newcommand{\R}{\mathbb{R}}
     "Complex":      "\u2102",  # ℂ
     "N":            "\u2115",  # ℕ
     "Q":            "\u211A",  # ℚ
@@ -285,48 +287,22 @@ latex_symbols: dict[str, str] = {
     "underleftarrow": "\u20EE",
     "underrightarrow": "\u20EF",
     "asteraccent": "\u20F0",
-    "mathbb{C}": "ℂ",
     "Euler": "ℇ",
-    "mathcal{g}": "ℊ",
-    "mathcal{H}": "ℋ",
-    "mathfrak{H}": "ℌ",
-    "mathbb{H}": "ℍ",
     "Planckconst": "ℎ",
     "hslash": "ℏ",
-    "mathcal{I}": "ℐ",
     "Im": "ℑ",
-    "mathcal{L}": "ℒ",
     "ell": "ℓ",
-    "mathbb{N}": "ℕ",
     "wp": "℘",
-    "mathbb{P}": "ℙ",
-    "mathbb{Q}": "ℚ",
-    "mathcal{R}": "ℛ",
     "Re": "ℜ",
-    "mathbb{R}": "ℝ",
-    "mathbb{Z}": "ℤ",
     "tcohm": "Ω",
     "mho": "℧",
-    "mathfrak{Z}": "ℨ",
     "turnediota": "℩",
     "Angstroem": "Å",
-    "mathcal{B}": "ℬ",
-    "mathfrak{C}": "ℭ",
-    "mathcal{e}": "ℯ",
-    "mathcal{E}": "ℰ",
-    "mathcal{F}": "ℱ",
     "Finv": "Ⅎ",
-    "mathcal{M}": "ℳ",
-    "mathcal{o}": "ℴ",
     "aleph": "ℵ",
     "beth": "ℶ",
     "gimel": "ℷ",
     "daleth": "ℸ",
-    "mathbb{\\pi}": "ℼ",
-    "mathbb{\\gamma}": "ℽ",
-    "mathbb{\\Gamma}": "ℾ",
-    "mathbb{\\Pi}": "ℿ",
-    "mathbb{\\Sigma}": "⅀",
     "Game": "⅁",
     "sansLturned": "⅂",
     "sansLmirrored": "⅃",
